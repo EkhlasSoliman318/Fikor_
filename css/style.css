@@ -1,0 +1,506 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+img{
+    width: 100%;
+}
+.header{
+    background-image: url(../img/slider/slider-01.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+   
+}
+/*************start nav**********************/
+.header .navbar{
+    z-index: 9999999999;
+}
+.navbar-brand{
+    color: #ff305b;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.5;
+    transition: all 0.5s;
+    padding: 7px 10px ;
+}
+.header .navbar .nav-item .nav-link{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5;
+    transition: all 0.5s;
+    padding: 7px 10px ;
+}
+.header .navbar .nav-item .nav-link.active{
+    color: #ff305b;
+}
+.header .navbar .nav-item .nav-link:hover, .header .navbar .nav-item .nav-link:focus{
+    color: #ff305b;
+}
+
+/****************header-contant**************/
+.header .header-content .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.header .content{
+    padding-top: 170px;
+}
+
+.header .header-content .titel h3 {
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff; 
+}
+.header .header-content .titel h1 {
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 700;
+    color: #ff305b;
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.header .header-content .titel h4 {
+    font-size: 26px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+
+/************************end header*************************************/
+
+
+
+/**************** start about**********************/
+.about{
+    padding: 150px 0;
+}
+
+.about .about__profile{
+    border-radius: 5px;
+    position: relative;
+    display: block;
+    box-shadow: 0 0 0 8px #555 inset;
+    margin-top: 0;
+    margin-right: 0;
+}
+.about .about__img{
+    position: relative;
+    transform: translate(24px , 24px);
+}
+
+.about .about__img img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.about .about__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    transition: all .5s;
+    opacity: 0;
+}
+
+.about .about__img:hover .about__overlay{
+    height: 100%;
+    opacity: 1;
+}
+
+.about .about__icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.about .about__icon li a{
+    color: #fff;
+    font-size: 20px;
+    transition: all 0.5s;
+    padding: 5px 7px ;
+}
+
+.about .about__icon li a:hover{
+    color: #ff305b;
+}
+
+.about .about__desc{
+    margin-left: 70px;
+}
+.about .about__head {
+    border-bottom: 1px dashed #555;
+}
+.about .about__head h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.about .about__head span{
+    color: #ff305b;
+}
+
+.about .about__head p{
+    color: #555;
+    line-height: 1.8rem;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.about .about__list{
+    list-style: none;
+    margin: 20px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.about .about__list li{
+    flex: 0 0 50%;
+    margin-bottom: 7px;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+.about .about__btn .btn{
+    background-color: #ff305b;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    margin-right: 15px;
+    transition: all 0.5s;
+}
+.about .about__btn .btn:hover{
+    background-color: #EC2403;
+}
+
+
+/***********************end about*********************/
+
+/***********************start services*********************/
+.services{
+    background-color: #eee;
+    padding: 90px 0;
+}
+.title__section h1{
+    text-transform: capitalize;
+    font-size: 36px;
+    font-weight:900;
+    line-height: 1.5rem;
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+.title__section h1::after, .title__section h1::before{
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+}
+.title__section h1::after{
+    background-color: #ff305b;
+    bottom: 5px;
+    height: 1px;
+    width: 160px;
+}
+.title__section h1::before{
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 70px;
+}
+.services .services__details{
+  display: flex;
+}
+.services .services__box{
+    margin-right: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.services .services__box i {
+    color: #ff305b;
+    font-size: 36px;
+    transition: all 0.3s;
+}
+.services .services__box h2{
+    font-size: 36px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: #333;
+}
+.services .services__box  p{
+    color: #555;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+.services .services__box:hover{
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/*****************************************end services*************/
+/*****************************************start protoflio*************/
+
+.protoflio{
+    padding: 150px 0;
+}
+.protoflio .protoflio__gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.protoflio .protoflio__gallery .protoflio__img{
+    flex: 0 0 30%;
+    margin: 15px;
+    position: relative;
+}
+
+.protoflio .protoflio__gallery .protoflio__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all .5s;
+    opacity: 0;
+}
+
+.protoflio .protoflio__img:hover .protoflio__overlay{
+    height: 100%;
+    opacity: 1;
+}
+
+.protoflio .protoflio__icon{
+    position: absolute;
+    right: 0;
+    left: auto;
+    bottom: 0;
+}
+.protoflio .protoflio__icon i{
+    color:#ff305b;
+    font-size: 20px;
+    transition: all 0.5s;
+    padding: 5px 7px ;
+}
+.protoflio .protoflio__nav{
+    margin: 30px 0;
+}
+.protoflio .nav li a{
+    padding: 10px;
+    margin: 10px;
+    color: #333;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.protoflio .nav li a.active{
+    color: #ff305b;
+}
+
+.protoflio .nav li a:hover{
+    text-decoration: none;
+}
+.protoflio .team__info{
+    background-color: #ddd;
+    padding: 70px 0;
+}
+.protoflio .user__info{
+    display: flex;
+    flex-wrap: wrap;
+   }
+.protoflio .user__box{
+    flex: 0 0 25% ;
+}
+
+.protoflio .user__box .user__icon{
+    font-size: 20px;
+    color: #ff305b;
+}
+.protoflio .user__box .user__num{
+    font-size: 36px;
+    font-weight: 900;
+    color: #333;
+    margin: 10px 0;
+}
+
+.protoflio .user__box .user__desc{
+    font-size: 26;
+    font-weight: 700;
+    color: #555;
+}
+/*************************************end protoflio******************/
+/*************************************start testimonial**************/
+.testimonial{
+    padding: 20px 0 150px 0;
+}
+.testimonial .carousel-inner{
+    border-radius: 5px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+    width: 750px;
+    margin: 0 auto;
+}
+.testimonial .carousel-indicators{
+    bottom: -48px;
+}
+.testimonial .carousel-indicators li {
+    background-color: #ff305b;
+    border-top: 0;
+    border-bottom: 0;
+    border-radius: 10px;
+    width: 25px;
+    height: 10px;
+
+}
+.testimonial .testimonial__item{
+    background-color: #ddd;
+    padding: 40px 30px;
+    overflow: hidden;
+    display: flex;
+}
+
+.testimonial .testimonial__item .testimonial__img{
+    border-radius: 50%;
+    height: 150px;
+    position: relative;
+    z-index: 9999;
+    overflow: hidden;
+    flex: 0 0 22%;
+}
+.testimonial .testimonial__item .testimonial__content{
+    margin-left: 20px;
+}
+.testimonial .testimonial__item .testimonial__content h1{
+    text-transform: capitalize;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.testimonial .testimonial__item .testimonial__content .location{
+    color: #555;
+    line-height: 1.5rem;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.testimonial .testimonial__item .testimonial__content  p{
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+    color: #444;
+    margin: 10px;
+}
+.testimonial .testimonial__item .testimonial__content  .testimonial__star i{
+    color: #f8e910;
+}
+
+.testimonial .testimonial__item::after{
+    content: "";
+    height: 77px;
+    border-width: 190px;
+    border-style: solid;
+    border-color: #ff305b rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: -191px;
+    overflow: hidden;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
+/************************end testimonial**************/
+
+
+/*********************start blog***********************/
+.blog{
+    background-color: #ddd;
+    padding: 70px 0;
+}
+.blog .blog__items{
+    display: flex;
+}
+.blog__items .blog__box{
+    flex: 0 0 30%;
+    margin: 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.blog__box .blog__img img{
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+ 
+.blog .blog__items .blog__contant{
+    padding: 20px;
+}
+.blog .blog__items .blog__contant .blog__link ,.blog .blog__items .blog__contant .blog__more{
+    display: inline-block;
+    color: #555;
+    font-size: 19px;
+    font-weight: 700;
+    margin: 15px 0;
+    transition: all 0.5s;
+}
+
+.blog .blog__items .blog__contant .blog__link:hover, .blog .blog__items .blog__contant .blog__more:hover{
+    color: #ff305b;
+    text-decoration: none;
+}
+
+.blog .blog__items .blog__contant .blog__date{
+    color: #555;
+    line-height: 1.5rem;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.blog .blog__items .blog__contant  p{
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+    color: #444;
+    margin: 10px;
+}
